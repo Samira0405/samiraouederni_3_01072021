@@ -1,0 +1,120 @@
+
+/**menu3**/
+.fa-arrow-left
+{
+    font-size: 1.2em;
+    position: absolute;
+
+}
+.img2{
+    width: 100%;
+    height: 251px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+.container_gris{
+    position:relative;
+    background-color:#f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_menu3{
+    font-family: 'Shrikhand', cursive;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.coeur{
+   
+    position : absolute;
+    top : 25px; 
+    right : 20px;
+    font-size: 2.5em;
+    
+}
+.titre_entrees, .titre_plats, .titre_desserts{
+    margin-left: 20px ;
+    font-size: 1.2em;
+    border-bottom: 5px solid #99E2D0 ;
+    padding-bottom: 5px;
+    margin-top: 45px;
+    width: 50px;
+}
+.entree1, .entree2, .entree3{
+    padding: 15px;
+    background-color: white;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px rgb(233, 226, 226);
+}
+.entree1_nom, .entree2_nom, .entree3_nom
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.entree1_detail, .entree2_detail, .entree3_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.plat1, .plat2, .plat3{
+    padding: 15px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px rgb(233, 226, 226);
+}
+
+.plat1_nom, .plat2_nom, .plat3_nom
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plat1_detail, .plat2_detail, .plat3_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.dessert1, .dessert2, .dessert3{
+    padding: 15px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px rgb(233, 226, 226);
+}
+.dessert1_nom, .dessert2_nom, .dessert3_nom
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.dessert1_detail, .dessert2_detail, .dessert3_detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    font-weight: bold;
+}
+.commande{
+    background-color: #9356DC ;
+    color: white;
+    font-weight:normal;
+    border: 2px solid #9356DC;
+    height: 50px;
+    width: 218px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 30px 30px 70px 70px;
+    
+}
