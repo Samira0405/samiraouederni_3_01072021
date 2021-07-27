@@ -1,7 +1,6 @@
 @import "footer.css";
 @import " menus.css";
 
-
 body{
     font-family : 'Roboto', sans-serif ;
 }
@@ -92,17 +91,7 @@ h1{
 /**fonctionnement**/
 
 
-@media screen and (min-width: 1440px) {
-    .bloc_onglets{
-        justify-content: space-around;
-        flex-direction: row;
-        }
 
-        .pave_onglet
-        {
-            width: 30%;
-        }
-}
 
 
 
@@ -113,6 +102,7 @@ align-items: center;
 flex-direction: column;
 
 }
+
 
 
 .pave_onglet
@@ -203,20 +193,6 @@ background-color: #9256dc25;
 }
 
 
-@media screen and (min-width: 1440px) {
-.bloc_restaurant{
-    justify-content: space-evenly;
-    FLEX-DIRECTION: row;
-    FLEX-WRAP: wrap; 
-    }
-
-.resto_photo_descriptif
-    {
-    width: 40%; 
-    }
-}
-
-
 
 .titre_restaurants
 {
@@ -288,3 +264,25 @@ h4{
 }
 
 
+
+@media screen and (min-width: 1024px) {
+    .bloc_onglets{
+        justify-content: space-around;
+        flex-direction: row;
+        }
+
+    .pave_onglet
+    {
+    width: 30%;
+    }
+    .groupe_menu {
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        FLEX-WRAP: wrap;}
+    
+    .resto_photo_descriptif {
+        width: 40%; 
+        }
+}
