@@ -11,7 +11,6 @@ color:#9356DC #FF79DA #99E2D0
 }
 
 
-
 a{
     text-decoration: none;
 }
@@ -91,6 +90,22 @@ h1{
 
 }
 /**fonctionnement**/
+
+
+@media screen and (min-width: 1440px) {
+    .bloc_onglets{
+        justify-content: space-around;
+        flex-direction: row;
+        }
+
+        .pave_onglet
+        {
+            width: 30%;
+        }
+}
+
+
+
 .bloc_onglets{
 display: flex;
 justify-content: center;
@@ -106,16 +121,20 @@ flex-direction: column;
     width: 90%;
     height: 75px;
     border-radius: 20px;
-    box-shadow: 3px 5px 3px rgb(233, 226, 226);
+    box-shadow: 3px 5px 8px rgb(233, 226, 226);
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.pave_onglet:hover{
     cursor: pointer;
-    transform: scale(1.08);
+    position:relative;
 }
+
+.pave_onglet:hover{
+background-color: #9256dc25;
+
+}
+
 .onglet{
     display: flex;
     align-items: center;
@@ -137,15 +156,30 @@ flex-direction: column;
     width: 25px;
     height: 25px;
     position: absolute;
-    left: 15px;
+    left: -7px;
     
 }
 
-.fa-mobile-alt, .fa-list, .fa-store{
+.fa-list{
+
+    position: relative;
+    right: 5px;
     margin-right: 20px;
     color: rgb(63, 62, 62);
 }
 
+.fa-mobile-alt{
+
+    position: relative;
+    right: -15px;
+    margin-right: 40px;
+    color: rgb(63, 62, 62);
+}
+
+.fa-store{
+    margin-right: 20px;
+    color: rgb(63, 62, 62);
+}
 
 .fa-mobile-alt:hover, .fa-list:hover, .fa-store:hover {
     color: #9356dc;
@@ -167,6 +201,23 @@ flex-direction: column;
     margin-bottom: 15px;
 
 }
+
+
+@media screen and (min-width: 1440px) {
+.bloc_restaurant{
+    justify-content: space-evenly;
+    FLEX-DIRECTION: row;
+    FLEX-WRAP: wrap; 
+    }
+
+.resto_photo_descriptif
+    {
+    width: 40%; 
+    }
+}
+
+
+
 .titre_restaurants
 {
     padding-top: 40px;

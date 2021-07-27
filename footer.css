@@ -1,15 +1,23 @@
   
 footer {
     background-color: #383e42;
-    padding: 25px;
+    padding: 20px;
     color: white;
-    margin-bottom: 5px;
+   
 }
 
 .logo_footer {
 
     font-family: 'Shrikhand', cursive;
     font-size: medium;
+}
+.footer_partenaire{
+    margin-top: -5px;
+}
+
+.footer_mentions{
+    margin-top: -5px;
+margin-bottom: 10px;
 }
 
 .footer_contact{

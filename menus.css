@@ -25,7 +25,7 @@
     flex-direction: column;
 }
 
-.titre_menu3{
+.titre_menu1, .titre_menu2, .titre_menu3, .titre_menu4{
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
     font-size: 1.7em;
@@ -34,13 +34,12 @@
 }
 
 .coeur{
-   
     position : absolute;
-    top : 25px; 
-    right : 20px;
-    font-size: 2.5em;
+    top : -170px; 
+    right : 5px;
     
 }
+
 .titre_entrees, .titre_plats, .titre_desserts{
     margin-left: 20px ;
     font-size: 1.2em;
@@ -49,12 +48,13 @@
     margin-top: 45px;
     width: 50px;
 }
-.entree1, .entree2, .entree3{
+.entree1, .entree2, .entree3, .entree4 {
     padding: 15px;
     background-color: white;
     margin: 0px 10px 10px 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
+    cursor: pointer;
 }
 .entree1_nom, .entree2_nom, .entree3_nom
 {
@@ -72,6 +72,7 @@
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
+    cursor: pointer;
 }
 
 .plat1_nom, .plat2_nom, .plat3_nom
@@ -90,6 +91,7 @@
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
+    cursor: pointer;
 }
 .dessert1_nom, .dessert2_nom, .dessert3_nom
 {
@@ -104,17 +106,26 @@
 span{
     font-weight: bold;
 }
+
+.bouton_commande
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
 .commande{
-    background-color: #9356DC ;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
     font-weight:normal;
-    border: 2px solid #9356DC;
     height: 50px;
     width: 218px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin: 30px 30px 70px 70px;
-    
+    cursor: pointer;
 }
