@@ -59,7 +59,24 @@
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
     cursor: pointer;
+    position: relative;
+    
 }
+
+.greenbox{
+    background-color:  #99e2d0;
+    height: 80px;
+    width: 80px;
+    border-radius: 0px 10px 10px 0px;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    left: 410px;
+    top: 0px;
+    display: flex;
+    animation: 2s ease-in-out;
+}
+
+
 .entree1_nom, .entree2_nom, .entree3_nom
 {
     font-weight: bold;
