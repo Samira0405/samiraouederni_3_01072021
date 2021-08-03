@@ -76,7 +76,14 @@
     animation: 2s ease-in-out;
 }
 
+.fa-check-circle{
 
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 1.7em;
+}
 .entree1_nom, .entree2_nom, .entree3_nom
 {
     font-weight: bold;
