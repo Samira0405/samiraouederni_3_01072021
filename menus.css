@@ -1,5 +1,9 @@
+@import "footer.css";
+@import " style.css";
 
-/**menu3**/
+
+
+/**menu1**/
 .fa-arrow-left
 {
     font-size: 1.2em;
@@ -24,11 +28,6 @@
     padding-bottom: 5px;
 }
 
-.section_menus{
-    display: flex;
-    flex-direction: column;
-}
-
 .titre_menu1, .titre_menu2, .titre_menu3, .titre_menu4{
     font-family: 'Shrikhand', cursive;
     font-weight: bold;
@@ -43,7 +42,6 @@
     right : 5px;
     
 }
-
 .titre_entrees, .titre_plats, .titre_desserts{
     margin-left: 20px ;
     font-size: 1.2em;
@@ -52,88 +50,163 @@
     margin-top: 45px;
     width: 50px;
 }
+
 .entree1, .entree2, .entree3, .entree4 {
-    padding: 15px;
+   padding-left: 15px;
     background-color: white;
     margin: 0px 10px 10px 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
     cursor: pointer;
-    position: relative;
+   display: flex;
+    justify-content: space-between;  
     
 }
 
+
+
+.entree_bloc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+margin-top: 15px;
+margin-bottom: 15px;
+text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    .entree_nom
+    {
+        font-weight: bold;
+        margin-bottom: 10px;
+        
+    }
+
+    .entree_detail{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .entree_prix{
+        display:flex;
+        flex-direction: column-reverse;
+        width: 10%;
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+
+
+
 .greenbox{
     background-color:  #99e2d0;
-    height: 80px;
     width: 80px;
     border-radius: 0px 10px 10px 0px;
-    transition: transform 1s ease-in-out;
-    position: absolute;
-    left: 410px;
-    top: 0px;
     display: flex;
     animation: 2s ease-in-out;
 }
 
+
+
 .fa-check-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1.7em;
+    margin-left: 20px;
+    transform: rotate(-360deg);
+    transition: transform 500ms ease-in-out;}
 
-    display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-size: 1.7em;
-}
-.entree1_nom, .entree2_nom, .entree3_nom
-{
-    font-weight: bold;
-    margin-bottom: 10px;
-    
-}
-.entree1_detail, .entree2_detail, .entree3_detail{
-    display: flex;
-    justify-content: space-between;
-}
+
+
 .plat1, .plat2, .plat3{
-    padding: 15px;
+    padding-left: 15px;
     background-color: white;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
     cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
 }
 
-.plat1_nom, .plat2_nom, .plat3_nom
+.plat_bloc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;}
+.plat_nom
 {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.plat1_detail, .plat2_detail, .plat3_detail{
+.plat_detail{
     display: flex;
     justify-content: space-between;
 }
+
+.plat_prix{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 10%;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+
 .dessert1, .dessert2, .dessert3{
-    padding: 15px;
+    padding-left: 15px;
     background-color: white;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
-.dessert1_nom, .dessert2_nom, .dessert3_nom
+.dessert_bloc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;}
+.dessert_nom
 {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.dessert1_detail, .dessert2_detail, .dessert3_detail{
+.dessert_detail{
     display: flex;
     justify-content: space-between;
 }
 
-span{
+.dessert_prix{
+    display:flex;
+    flex-direction: column-reverse;
+    width: 10%;
+    align-items: center;
     font-weight: bold;
+    margin-bottom: 15px;
+    margin-right: 10px;
 }
+
 
 .bouton_commande
 {
@@ -158,6 +231,32 @@ span{
     cursor: pointer;
 }
 
+
+.entree_anim {
+    animation: mesentrees 2s both;
+    opacity: 1;
+    }
+    
+    .plat_anim{
+    animation: mesplats 4s both;
+    opacity: 1;
+    }
+    
+    
+    .dessert_anim{
+    animation: mesdesserts 6s both;
+    opacity: 1;
+    
+    }
+
+
+.icon:hover{
+    transform: rotate(0deg);
+    }
+    
+.greenbox:hover{
+transform:translateX(1000px);
+}
 
 @media screen and (min-width: 1024px) {
 .section_menus{
