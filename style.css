@@ -17,18 +17,23 @@ body {
   z-index: 999;
 }
 
-
-
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #99e2d0;
   border-right: 16px solid #9356dc;
   border-bottom: 16px solid #ff79da;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  z-index:999;
+  width: 250px;
+  height: 250px;
+  animation: loader 3s linear both;
+  position: absolute;
+  top: 10vw;
+  left: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+
 }
 
 couleur {

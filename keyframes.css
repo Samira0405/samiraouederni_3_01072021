@@ -1,64 +1,49 @@
-@keyframes spin {
-  0% { transform: rotate(0deg); }
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  50% { transform: rotate(100deg);}
   100% { transform: rotate(360deg); }
+
+  0% {opacity: 1;}
+  80% {opacity: 0.5;}
+  100% {opacity: 0;}
 }
 
 @keyframes greenbox {
-
   0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-15px);
+  transform: translateX(0);
   }
   100% {
-    transform: translateX(-30px);
+  transform: translateX(-20%);
   }
 }
-
+/***apparition progressive du menu**/
 @keyframes mesentrees {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
+  0% {transform: translateY(0);
+    opacity: 0;}
 
-  50% {
-    transform: translateY(-7px);
-    opacity: 0.5;
-  }
+  50% {transform: translateY(-7px);
+    opacity: 0.5;}
 
-  100% {
-    transform: translateY(-15px);
-    opacity: 1;
-  }
+  100% {transform: translateY(-15px);
+    opacity: 1;}
 }
 
 @keyframes mesplats {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-7px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-15px);
-    opacity: 1;
-  }
+  0% {transform: translateY(0);
+    opacity: 0;}
+  50% {transform: translateY(-7px);
+    opacity: 0.5;}
+  100% {transform: translateY(-15px);
+    opacity: 1;}
 }
 
 @keyframes mesdesserts {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-7px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-15px);
-    opacity: 1;
-  }
+  0% {transform: translateY(0);
+    opacity: 0;}
+  50% {transform: translateY(-7px);
+    opacity: 0.5;}
+  100% {transform: translateY(-15px);
+    opacity: 1;}
 }
+
+

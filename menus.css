@@ -58,21 +58,21 @@
     border-radius: 10px;
     box-shadow: 3px 5px 3px rgb(233, 226, 226);
     cursor: pointer;
-   display: flex;
+    display: flex;
     justify-content: space-between;  
-    
 }
-
-
 
 .entree_bloc1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 90%;
+    width: 70%;
 margin-top: 15px;
 margin-bottom: 15px;
-text-overflow: ellipsis;
+}
+
+.entree_bloc1:hover{
+    text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -98,19 +98,32 @@ text-overflow: ellipsis;
         font-weight: bold;
         margin-bottom: 15px;
         margin-right: 10px;
+
     }
+
+    .entree_prix:hover{
+        animation: prix 2s ease-in-out both;
+    
+    }
+
 
 
 
 .greenbox{
     background-color:  #99e2d0;
-    width: 80px;
+    width: 20%;
     border-radius: 0px 10px 10px 0px;
     display: flex;
-    animation: 2s ease-in-out;
+    
+   
 }
 
 
+    
+.greenbox:hover{
+display:block;
+animation: greenbox 1s both;
+}
 
 .fa-check-circle{
     display: flex;
@@ -120,7 +133,7 @@ text-overflow: ellipsis;
     font-size: 1.7em;
     margin-left: 20px;
     transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;}
+    transition: transform 500ms ease-in-out;} 
 
 
 
@@ -141,10 +154,14 @@ text-overflow: ellipsis;
     justify-content: space-evenly;
     width: 90%;
     margin-top: 15px;
-    margin-bottom: 15px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;}
+    margin-bottom: 15px;}
+
+    .plat_bloc1:hover {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;}
+
+
 .plat_nom
 {
     font-weight: bold;
@@ -184,9 +201,12 @@ text-overflow: ellipsis;
     width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;}
+}
+
+    .dessert_bloc1 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;}
 .dessert_nom
 {
     font-weight: bold;
@@ -250,13 +270,6 @@ text-overflow: ellipsis;
     }
 
 
-.icon:hover{
-    transform: rotate(0deg);
-    }
-    
-.greenbox:hover{
-transform:translateX(1000px);
-}
 
 @media screen and (min-width: 1024px) {
 .section_menus{
