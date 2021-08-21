@@ -1,285 +1,179 @@
 @import "footer.css";
 @import " style.css";
 
-
-
-/**menu1**/
-.fa-arrow-left
-{
-    font-size: 1.2em;
-    position: absolute;
-
+/**header**/
+.fa-arrow-left {
+  font-size: 1.2em;
+  position: absolute;
 }
-.img2{
-    width: 100%;
-    height: 251px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
+.img2 {
+  width: 100%;
+  height: 251px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
 }
-
-
-.container_gris{
-    position:relative;
-    background-color:#f6f6f6;
-    border-radius: 50px 50px 0px 0px;
-    margin-top: -40px;
-    padding-bottom: 5px;
+/*fond gris*/
+.container_gris {
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: -40px;
+  padding-bottom: 5px;
 }
-
-.titre_menu1, .titre_menu2, .titre_menu3, .titre_menu4{
-    font-family: 'Shrikhand', cursive;
-    font-weight: bold;
-    font-size: 1.7em;
-    margin-left: 20px;
-    padding-top: 30px;
+/**titre principal+coeur**/
+.titre_menu {
+  font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-left: 20px;
+  padding-top: 30px;
 }
 
-.coeur{
-    position : absolute;
-    top : -170px; 
-    right : 5px;
-    
-}
-.titre_entrees, .titre_plats, .titre_desserts{
-    margin-left: 20px ;
-    font-size: 1.2em;
-    border-bottom: 5px solid #99E2D0 ;
-    padding-bottom: 5px;
-    margin-top: 45px;
-    width: 50px;
+.coeur {
+  position: absolute;
+  top: -170px;
+  right: 5px;
 }
 
-.entree1, .entree2, .entree3, .entree4 {
-   padding-left: 15px;
-    background-color: white;
-    margin: 0px 10px 10px 10px;
-    border-radius: 10px;
-    box-shadow: 3px 5px 3px rgb(233, 226, 226);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;  
+/*Entree-plat-dessert*/
+.sous_titre {
+  margin-left: 20px;
+  font-size: 1.2em;
+  border-bottom: 5px solid #99e2d0;
+  padding-bottom: 5px;
+  margin-top: 45px;
+  width: 50px;
 }
 
-.entree_bloc1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 70%;
-margin-top: 15px;
-margin-bottom: 15px;
+/*le menu*/
+.pave_menu {
+  padding-left: 15px;
+  background-color: white;
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 3px rgb(233, 226, 226);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
 }
 
-.entree_bloc1:hover{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+/*entree_nom+entree_detail*/
+.bloc_sousmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-    .entree_nom
-    {
-        font-weight: bold;
-        margin-bottom: 10px;
-        
-    }
-
-    .entree_detail{
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .entree_prix{
-        display:flex;
-        flex-direction: column-reverse;
-        width: 10%;
-        align-items: center;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-right: 10px;
-
-    }
-
-    .entree_prix:hover{
-        animation: prix 2s ease-in-out both;
-    
-    }
-
-
-
-
-.greenbox{
-    background-color:  #99e2d0;
-    width: 20%;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    
-   
+.entree_nom, .plat_nom, .dessert_nom {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bloc_sousmenu:hover{
+  width: 50%;
+  animation: decalage 2s ease-in-out both;
 }
 
 
-    
-.greenbox:hover{
-display:block;
-animation: greenbox 1s both;
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-.fa-check-circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    font-size: 1.7em;
-    margin-left: 20px;
-    transform: rotate(-360deg);
-    transition: transform 500ms ease-in-out;} 
-
-
-
-.plat1, .plat2, .plat3{
-    padding-left: 15px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 5px 3px rgb(233, 226, 226);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between; 
-}
-
-.plat_bloc1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;}
-
-    .plat_bloc1:hover {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;}
-
-
-.plat_nom
-{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.plat_detail{
-    display: flex;
-    justify-content: space-between;
-}
-
-.plat_prix{
-    display:flex;
-    flex-direction: column-reverse;
-    width: 10%;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-right: 10px;
+.entree_prix, .plat_prix, .dessert_prix {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 10%;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 
-.dessert1, .dessert2, .dessert3{
-    padding-left: 15px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 5px 3px rgb(233, 226, 226);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-.dessert_bloc1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.greenbox {
+  background-color: #99e2d0;
+  width: 20%;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+ 
 }
 
-    .dessert_bloc1 {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;}
-.dessert_nom
-{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.dessert_detail{
-    display: flex;
-    justify-content: space-between;
-}
+.greenbox:hover {
+  animation: greenbox 1s both;
+  transition: transform 500ms ease-in-out;
+}  
 
-.dessert_prix{
-    display:flex;
-    flex-direction: column-reverse;
-    width: 10%;
-    align-items: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-right: 10px;
-}
+.fa-check-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.7em;
+  margin-left: 20px;
+  transition: transform 500ms ease-in-out;
+} 
+.fa-check-circle:hover {
+  animation: rotation 2s ease-in-out both;
+  transition: transform 500ms ease-in-out;
+} 
 
-
-.bouton_commande
-{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-
-
-.commande{
-    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-    color: white;
-    font-weight:normal;
-    height: 50px;
-    width: 218px;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-}
-
-
+/**apparition progressive**/
 .entree_anim {
-    animation: mesentrees 2s both;
-    opacity: 1;
-    }
-    
-    .plat_anim{
-    animation: mesplats 4s both;
-    opacity: 1;
-    }
-    
-    
-    .dessert_anim{
-    animation: mesdesserts 6s both;
-    opacity: 1;
-    
-    }
+  animation: mesentrees 2s both;
+  opacity: 1;
+}
 
+.plat_anim {
+  animation: mesplats 4s both;
+  opacity: 1;
+}
 
+.dessert_anim {
+  animation: mesdesserts 6s both;
+  opacity: 1;
+}
+
+/*commande*/
+.bouton_commande {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.commande {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
+  font-weight: normal;
+  height: 50px;
+  width: 218px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 1024px) {
-.section_menus{
-display: flex;
-flex-direction: row;
-justify-content: space-around;}
+  .section_menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.menu_entrees, .menu_plats, .menu_desserts{
-width: 30%;
-
-}
-
+  .menu_entrees,
+  .menu_plats,
+  .menu_desserts {
+    width: 30%;
+  }
 }
