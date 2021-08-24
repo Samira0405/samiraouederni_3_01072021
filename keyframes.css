@@ -8,24 +8,7 @@
   100% {opacity: 0;}
 }
 
-@keyframes greenbox {
-  0% {
-  transform: translateX(-20%);
-  }
-  100% {
-  transform: translateX(0);
-  }
-}
-
-
-@keyframes fa-check-circle {
-  0% {
-  transform: rotate(0);
-  }
-  100% {
-  transform: rotate(360deg);
-  }
-}
+/*  */
 /***apparition progressive du menu**/
 @keyframes mesentrees {
   0% {transform: translateY(0);
