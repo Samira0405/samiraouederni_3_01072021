@@ -5,6 +5,7 @@
 .fa-arrow-left {
   font-size: 1.2em;
   position: absolute;
+  left: 10px;
 }
 .img2 {
   width: 100%;
