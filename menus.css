@@ -54,7 +54,7 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 90%;
   height: 75px;
 }
 /*entree_nom+entree_detail*/
@@ -148,10 +148,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+
   .section_menus {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
   }
 
   .menu_entrees,
