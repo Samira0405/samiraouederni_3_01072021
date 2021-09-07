@@ -9,7 +9,7 @@ body {
 /**page de chargement**/
 .loader_container {
   width: 100vw;
-  height: 100vh;
+  height: 230vh;
   background-color: white;
   position: absolute;
   top: 0;
