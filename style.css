@@ -8,8 +8,8 @@ body {
 }
 /**page de chargement**/
 .loader_container {
-  width: 100vw;
-  height: 230vh;
+  width: 98.7vw;
+  height: 300vh;
   background-color: white;
   position: absolute;
   top: 0;
@@ -30,9 +30,10 @@ body {
   width: 250px;
   height: 250px;
   animation: loader 3s linear both;
-  top: 10vw;
-  left: 80vh;
-
+  margin-top: -1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
 }
 a {
@@ -97,10 +98,11 @@ h1 {
   justify-content: center;
   align-items: center;
   display: flex;
+  
 }
 .bouton:hover {
-  cursor: pointer;
   transform: scale(1.08);
+  cursor: pointer;
 }
 /**fonctionnement**/
 .bloc_onglets {
@@ -247,6 +249,13 @@ h4 {
   font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
+  .loader_container {
+    height: 205vh;
+    
+  }
+  .loader {
+    margin-top: -700px;
+  }
   .bloc_onglets {
     justify-content: space-around;
     flex-direction: row;
