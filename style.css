@@ -229,10 +229,10 @@ h1 {
 .coeurplein {
   opacity: 0;
 }
+
 .coeurplein:hover {
   opacity: 1;
   background: -webkit-linear-gradient(top, #9356dc 30%, #ff79da 70%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: coeur 2s both;
