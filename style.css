@@ -8,12 +8,15 @@ body {
 }
 /**page de chargement**/
 .loader_container {
-  width: 98.7vw;
-  height: 300vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
-  position: absolute;
+  position:fixed;
   top: 0;
-  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +33,6 @@ body {
   width: 250px;
   height: 250px;
   animation: loader 3s linear both;
-  margin-top: -1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,14 +253,7 @@ h4 {
   font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
-  .loader_container {
-    height: 205vh;
-    
-  }
-  .loader {
-    margin-top: -700px;
-  }
-  .bloc_onglets {
+ .bloc_onglets {
     justify-content: space-around;
     flex-direction: row;
   }
