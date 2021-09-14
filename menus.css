@@ -148,6 +148,11 @@
   cursor: pointer;
 }
 
+.commande:hover{
+  opacity: 0.9;
+  transform: scale(1.001);
+}
+
 @media screen and (min-width: 1024px) {
 
 
