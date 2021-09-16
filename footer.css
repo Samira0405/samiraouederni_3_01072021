@@ -1,45 +1,34 @@
-  
 footer {
-    background-color: #383e42;
-    padding: 20px;
-    color: white;
-   
+  background-color: #383e42;
+  padding: 20px;
+  color: white;
 }
-
 .logo_footer {
-
-    font-family: 'Shrikhand', cursive;
-    font-size: medium;
+  font-family: "Shrikhand", cursive;
+  font-size: medium;
 }
-.footer_partenaire{
-    margin-top: -5px;
+.footer_partenaire {
+  margin-top: -5px;
 }
-
-.footer_mentions{
-    margin-top: -5px;
-margin-bottom: 10px;
+.footer_mentions {
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
-
-.footer_contact{
-    color: white;
+.footer_contact {
+  color: white;
 }
-
-
-
 @media screen and (min-width: 1024px) {
-    footer{
+  footer {
     background-color: #383e42;
     padding: 20px;
     color: white;
-    DISPLAY: FLEX;
-    JUSTIFY-CONTENT: space-between;
-    ALIGN-ITEMS: baseline;
+    display: FLEX;
+    justify-content: space-between;
+    align-items: baseline;
     font-size: 1.2em;
-    }
-    .logo_footer {
-
-        font-family: 'Shrikhand', cursive;
-        font-size:x-large;
-    }
-
+  }
+  .logo_footer {
+    font-family: "Shrikhand", cursive;
+    font-size: x-large;
+  }
 }
